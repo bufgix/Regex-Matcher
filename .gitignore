@@ -1,3 +1,5 @@
 nbproject/
 *.class
 *.jar
+build/classes/
+build/built-jar.properties

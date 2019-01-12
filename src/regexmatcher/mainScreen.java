@@ -27,7 +27,6 @@ import regexmatcher.helpScreen;
  * @author simplex
  */
 public class mainScreen extends javax.swing.JFrame {
-
     /**
      * Creates new form mainScreen
      */
@@ -113,9 +112,9 @@ public class mainScreen extends javax.swing.JFrame {
         
         boolean found = false;
         if (dataText.equals("") || regexPatternText.getText().equals("")) return;
-        while(matcher.find()){
+        while(matcher.find()){        
             for (int i = matcher.groupCount(); i >= 0; i--){
-                found = true;
+                found = true;                
                 int p0 = dataText.indexOf(matcher.group(i));
                 int p1 = p0 + matcher.group(i).length();
                 try {
@@ -223,8 +222,7 @@ public class mainScreen extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fontText, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(fontText, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -274,8 +272,8 @@ public class mainScreen extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-               helpScreen hp = new helpScreen();
-               hp.run();
+        helpScreen hp = new helpScreen();
+        hp.run();   
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

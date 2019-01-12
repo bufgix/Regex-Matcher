@@ -13,7 +13,7 @@ public class helpScreen extends javax.swing.JFrame {
 
     /**
      * Creates new form helpScreen
-     */
+     */  
     public helpScreen() {
         initComponents();
         StringBuffer buff = new StringBuffer();
@@ -49,7 +49,9 @@ public class helpScreen extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         helpText = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(550, 450));
+        setResizable(false);
 
         helpText.setText("tt");
         helpText.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -69,7 +71,7 @@ public class helpScreen extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 419, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 425, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -110,7 +112,7 @@ public class helpScreen extends javax.swing.JFrame {
             }
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel helpText;
     private javax.swing.JScrollPane jScrollPane1;
